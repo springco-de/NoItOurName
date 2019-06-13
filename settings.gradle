@@ -1,1 +1,1 @@
-include ':app', ':comments', ':d'
+include ':app'
