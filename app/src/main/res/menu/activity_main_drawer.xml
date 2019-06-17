@@ -9,30 +9,17 @@
             android:icon="@drawable/baseline_home_black_24dp"
             android:title="Главная" />
         <item
-            android:id="@+id/nav_event"
+            android:id="@+id/nav_video"
             android:icon="@drawable/baseline_video_library_black_24dp"
             android:title="Видео Материалы" />
         <item
-            android:id="@+id/nav_search"
-            android:icon="@drawable/baseline_search_black_24dp"
-            android:title="Поиск" />
+            android:id="@+id/nav_talkshow"
+            android:icon="@drawable/ic_play_circle_filled_black_24dp"
+            android:title="Ток шоу" />
         <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/baseline_settings_black_24dp"
-            android:title="Настройки" />
+            android:id="@+id/nav_disclaimer"
+            android:icon="@drawable/ic_warning_black_24dp"
+            android:title="Disclaimer" />
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Поделиться" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Отправить" />
-        </menu>
-    </item>
 
 </menu>

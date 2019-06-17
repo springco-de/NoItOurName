@@ -6,56 +6,58 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ContentActivity">
+
+    <view
+        android:id="@+id/youtubePlay"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".ContentActivity">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <view
-            android:id="@+id/youtubePlay"
-            class="com.google.android.youtube.player.YouTubePlayerView"
-            id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
-        <LinearLayout
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/v_tags"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="#Алматы #Жезказган #Сирия"
+            android:textColor="#3EA6FF" />
 
+        <TextView
+            android:id="@+id/v_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Религиозная ситуация в Казахстане | Не от нашего имени"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/v_tags"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="#Алматы #Жезказган #Сирия"
-                android:textColor="#3EA6FF" />
-
-            <TextView
-                android:id="@+id/v_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Религиозная ситуация в Казахстане | Не от нашего имени"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/v_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:text="Из Казахстана на войну в Сирию уехало около 600 человек. Молодые люди из #Алматы и Жезказганского района, в котором эта проблема стоит остро, собрались поделиться опытом и обсудить религиозную ситуацию в регионах и мегаполисе."
-                android:textSize="18dp" />
-
-        </LinearLayout>
-
+        <TextView
+            android:id="@+id/v_content"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:padding="5dp"
+            android:text="Из Казахстана на войну в Сирию уехало около 600 человек. Молодые люди из #Алматы и Жезказганского района, в котором эта проблема стоит остро, собрались поделиться опытом и обсудить религиозную ситуацию в регионах и мегаполисе."
+            android:textSize="18dp" />
 
     </LinearLayout>
+
+
+</LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -63,18 +65,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="@dimen/fab_margin"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:src="@drawable/ic_share_24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.944" />
-
+        app:layout_constraintVertical_bias="0.972" />
 </android.support.constraint.ConstraintLayout>

@@ -28,6 +28,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        DashFragment dashFragment = new DashFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager
+                .beginTransaction()
+                .replace(R.id.mainLayout, dashFragment)
+                .commit();
+
+        drawer.openDrawer(GravityCompat.START);
+
     }
 
     @Override
@@ -55,7 +65,7 @@ public class MainActivity extends AppCompatActivity
                     .beginTransaction()
                     .replace(R.id.mainLayout, dashFragment)
                     .commit();
-        } else if (id == R.id.nav_event) {
+        } else if (id == R.id.nav_video) {
             VideoFragment eventFragment = new VideoFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager
@@ -63,25 +73,15 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.mainLayout, eventFragment)
                     .commit();
 
-        } else if (id == R.id.nav_search) {
-            SearchFragment searchFragment = new SearchFragment();
+        } else if (id == R.id.nav_talkshow) {
+            TalkShowFragment talkShowFragment = new TalkShowFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager
                     .beginTransaction()
-                    .replace(R.id.mainLayout, searchFragment)
+                    .replace(R.id.mainLayout, talkShowFragment)
                     .commit();
 
-        } else if (id == R.id.nav_settings) {
-            SettingsFragment settingsFragment = new SettingsFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager
-                    .beginTransaction()
-                    .replace(R.id.mainLayout, settingsFragment)
-                    .commit();
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_disclaimer) {
 
         } else {
             DashFragment dashFragment = new DashFragment();

@@ -54,38 +54,38 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="15dp"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo1"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
-                        android:layout_height="100dp" />
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_first"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -95,10 +95,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
 
 
                     </LinearLayout>
@@ -108,39 +109,38 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="15dp"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo2"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
+                        android:layout_width="130dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_second"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -150,51 +150,52 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
 
 
                     </LinearLayout>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="15dp"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo3"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
+                        android:layout_width="130dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_third"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -204,51 +205,52 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
 
 
                     </LinearLayout>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="15dp"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo4"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
+                        android:layout_width="130dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_fourth"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -258,51 +260,52 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
 
 
                     </LinearLayout>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
+                android:layout_columnWeight="1"
                 android:layout_margin="15dp"
-                >
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo5"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
                         android:layout_width="140dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_fifth"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -312,10 +315,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
 
 
                     </LinearLayout>
@@ -325,38 +329,38 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="15dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo6"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
+                        android:layout_width="130dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_six"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -366,48 +370,49 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="15dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo7"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
+                        android:layout_width="130dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_seventh"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -417,48 +422,49 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="15dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo8"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
+                        android:layout_width="130dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_eight"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -468,48 +474,49 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="15dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo9"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
+                        android:layout_width="130dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_ninth"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -519,48 +526,49 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
+                android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
-                app:cardElevation="6dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="15dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="15dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:id="@+id/cardVideo10"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="left|center_vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
                     <ImageView
-                        android:src="@drawable/logo"
-                        android:layout_width="140dp"
+                        android:layout_width="130dp"
                         android:layout_height="100dp"
-                        />
+                        android:src="@drawable/logo" />
 
                     <LinearLayout
-                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center_horizontal">
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:layout_margin="5dp"
                             android:text="@string/title_tenth"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
@@ -570,10 +578,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="10dp"
-                            android:paddingRight="10dp"
                             android:paddingTop="10dp"
+                            android:paddingRight="10dp"
                             android:text="@string/youtube_material"
-                            android:textColor="#6f6f6f" />
+                            android:textColor="#6f6f6f"
+                            android:textSize="@dimen/youtube_material_text_size" />
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
