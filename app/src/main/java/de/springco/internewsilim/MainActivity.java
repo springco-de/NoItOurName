@@ -82,7 +82,12 @@ public class MainActivity extends AppCompatActivity
                     .commit();
 
         } else if (id == R.id.nav_disclaimer) {
-
+            DisclaimerFragment disclaimerFragment = new DisclaimerFragment();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager
+                    .beginTransaction()
+                    .replace(R.id.mainLayout, disclaimerFragment)
+                    .commit();
         } else {
             DashFragment dashFragment = new DashFragment();
             FragmentManager fragmentManager = getSupportFragmentManager();
