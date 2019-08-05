@@ -1,5 +1,7 @@
 package de.springco.internewsilim;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
@@ -9,6 +11,9 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import de.springco.internewsilim.TalkShow.TalkShowFragment;
+import de.springco.internewsilim.Video.VideoFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -36,7 +41,7 @@ public class MainActivity extends AppCompatActivity
                 .replace(R.id.mainLayout, dashFragment)
                 .commit();
 
-        drawer.openDrawer(GravityCompat.START);
+        //drawer.openDrawer(GravityCompat.START);
 
     }
 
@@ -49,8 +54,6 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-
-
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -88,13 +91,24 @@ public class MainActivity extends AppCompatActivity
                     .beginTransaction()
                     .replace(R.id.mainLayout, disclaimerFragment)
                     .commit();
-        } else {
-            DashFragment dashFragment = new DashFragment();
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager
-                    .beginTransaction()
-                    .replace(R.id.mainLayout, dashFragment)
-                    .commit();
+        } else if (id == R.id.nav_close){
+            Intent i = new Intent(Intent.ACTION_MAIN);
+            i.addCategory(Intent.CATEGORY_HOME);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(i);
+
+            //в зависимости от версии оси намертво убиваем приложение
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                finishAndRemoveTask();
+            }
+            else {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN){
+                    finishAffinity();
+                } else {
+                    finish();
+                }
+            }
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

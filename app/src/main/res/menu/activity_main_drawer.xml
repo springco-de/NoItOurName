@@ -11,15 +11,20 @@
         <item
             android:id="@+id/nav_video"
             android:icon="@drawable/baseline_video_library_black_24dp"
-            android:title="Видео Материалы" />
+            android:title="Видео Ролики"/>
         <item
             android:id="@+id/nav_talkshow"
             android:icon="@drawable/ic_play_circle_filled_black_24dp"
-            android:title="Ток шоу" />
+            android:title="Ток-шоу" />
         <item
             android:id="@+id/nav_disclaimer"
             android:icon="@drawable/ic_warning_black_24dp"
-            android:title="Disclaimer" />
+            android:title="Дисклеймер" />
+        <item
+            android:id="@+id/nav_close"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Выход" />
+
     </group>
 
 </menu>

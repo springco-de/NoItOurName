@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".ContentActivity">
+        tools:context=".TalkShow.ContentForTalkShowActivity">
 
         <view
             android:id="@+id/youtubePlay"
@@ -34,7 +34,7 @@
                 android:id="@+id/v_tags"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#Алматы #Жезказган #Сирия"
+                android:text="#война #Азия #Сирия"
                 android:textColor="#3EA6FF" />
 
             <TextView
@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:text="Религиозная ситуация в Казахстане | Не от нашего имени"
+                android:text="Война в Сирии и насильственный экстремизм"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:padding="5dp"
-                android:text="Из Казахстана на войну в Сирию уехало около 600 человек. Молодые люди из #Алматы и Жезказганского района, в котором эта проблема стоит остро, собрались поделиться опытом и обсудить религиозную ситуацию в регионах и мегаполисе."
+                android:text="Что заставляет молодых людей бросать своих родных и вступать в террористические организации? Какие последствия для семей и общества несёт #война в Сирии? Какие меры принимаются в разных странах этого региона для противодействия насильственному экстремизму?"
                 android:textSize="18dp" />
 
         </LinearLayout>
@@ -69,7 +69,7 @@
         android:layout_marginRight="4dp"
         android:layout_marginBottom="4dp"
         android:backgroundTint="@color/colorPrimaryDark"
-        android:src="@drawable/ic_share_24dp"
+        android:src="@drawable/ic_share_white_24dp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintHorizontal_bias="0.976"

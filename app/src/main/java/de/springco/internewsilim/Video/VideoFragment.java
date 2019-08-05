@@ -1,16 +1,15 @@
-package de.springco.internewsilim;
+package de.springco.internewsilim.Video;
 
 
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import de.springco.internewsilim.R;
 
 
 /**
@@ -46,7 +45,7 @@ public class VideoFragment extends Fragment implements View.OnClickListener {
         cardVideo2.setOnClickListener(this);
         cardVideo3 = (LinearLayout) view.findViewById(R.id.cardVideo3);
         cardVideo3.setOnClickListener(this);
-        cardVideo4 = (LinearLayout) view.findViewById(R.id.cardVideo4);
+        /*cardVideo4 = (LinearLayout) view.findViewById(R.id.cardVideo4);
         cardVideo4.setOnClickListener(this);
         cardVideo5 = (LinearLayout) view.findViewById(R.id.cardVideo5);
         cardVideo5.setOnClickListener(this);
@@ -59,7 +58,7 @@ public class VideoFragment extends Fragment implements View.OnClickListener {
         cardVideo9 = (LinearLayout) view.findViewById(R.id.cardVideo9);
         cardVideo9.setOnClickListener(this);
         cardVideo10 = (LinearLayout) view.findViewById(R.id.cardVideo10);
-        cardVideo10.setOnClickListener(this);
+        cardVideo10.setOnClickListener(this);*/
 
         return view;
     }
@@ -76,7 +75,7 @@ public class VideoFragment extends Fragment implements View.OnClickListener {
                 intent.putExtra("title", "Ош, юг Кыргызстана | Не от нашего имени");
                 intent.putExtra("content", "Почему сотни кыргызстанцев уехали воевать в Сирию и Ирак? Что о них думают их друзья, соседи? Как бороться с этим?\n" +
                         "\"Не от нашего имени\" – уникальный региональный ТВ-проект в Центральной Азии, где молодые люди обсуждают проблемы экстремизма. Первый выпуск (из десяти) посвящен южному региону Кыргызстана\n");
-                intent.putExtra("url","https://www.facebook.com/azattyk/videos/899341283609371");
+                intent.putExtra("url","https://www.facebook.com/groups/2224604507551227/permalink/2602255089786165/");
                 startActivity(intent);
 
                 break;
@@ -88,7 +87,7 @@ public class VideoFragment extends Fragment implements View.OnClickListener {
                 intent.putExtra("content", "\"Уехать [в Сирию], бросив здесь семью и детей – это не джихад\"\n" +
                         "\n" +
                         "Второй выпуск проекта \"Не от нашего имени\" – уникального регионального ТВ-проекта в Центральной Азии, где молодые люди обсуждают проблемы экстремизма. Выпуск посвящен северному региону Кыргызстана\n");
-                intent.putExtra("url","https://www.facebook.com/azattyk/videos/615215705542701/");
+                intent.putExtra("url","https://www.facebook.com/azattyk/videos/615215705542701/"); //Надо поменять
                 startActivity(intent);
 
                 break;
@@ -100,11 +99,11 @@ public class VideoFragment extends Fragment implements View.OnClickListener {
                 intent.putExtra("content", "\"Почему так много кыргызстанцев уехали [в Сирию]? Это вина района, республики, всех нас!\"\n" +
                         "\n" +
                         "Третий выпуск проекта \"Не от нашего имени\" – уникального регионального ТВ-проекта в Центральной Азии, где молодые люди обсуждают проблемы экстремизма. Это последний выпуск, снятый в Кыргызстане\n");
-                intent.putExtra("url","https://www.facebook.com/azattyk/videos/1690856301023551/");
+                intent.putExtra("url","https://www.facebook.com/azattyk/videos/1690856301023551/"); //Надо поменять
                 startActivity(intent);
 
                 break;
-            case R.id.cardVideo4:
+            /*case R.id.cardVideo4:
                 intent = new Intent(getContext(), ContentActivity.class);
                 intent.putExtra("index", 3);
                 intent.putExtra("tag", "#Казахстан #Жэзказган #Сирия");
@@ -186,7 +185,7 @@ public class VideoFragment extends Fragment implements View.OnClickListener {
                         "Заключительный выпуск проекта \"Не от нашего имени\" – уникального регионального ТВ-проекта в Центральной Азии, где молодые люди обсуждают проблемы экстремизма\n");
                 intent.putExtra("url","https://www.facebook.com/azattyk/videos/704641786558257/");
                 startActivity(intent);
-                break;
+                break;*/
         }
     }
 }

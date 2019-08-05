@@ -1,4 +1,4 @@
-package de.springco.internewsilim;
+package de.springco.internewsilim.Video;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,10 +16,12 @@ import com.google.android.youtube.player.YouTubePlayerView;
 import java.util.ArrayList;
 import java.util.List;
 
+import de.springco.internewsilim.R;
+import de.springco.internewsilim.YoutubeConfig;
+
 public class ContentActivity extends YouTubeBaseActivity {
 
     TextView v_tag, v_title, v_content;
-
     YouTubePlayerView youTubePlayerView;
     YouTubePlayer.OnInitializedListener listener;
 
@@ -66,16 +68,16 @@ public class ContentActivity extends YouTubeBaseActivity {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 List<String> videoList = new ArrayList<String>();
-                videoList.add("TJ2Eg8M6oN4");
-                videoList.add("HsPZhEjhqjs");
-                videoList.add("YjN7kiPNBE8");
-                videoList.add("9IcWCoBhA6Q");
+                videoList.add("oF0EvblRUq4"); //https://www.youtube.com/watch?v=oF0EvblRUq4&feature=youtu.be
+                videoList.add("9cuR7UsR4ew"); //https://www.youtube.com/watch?v=9cuR7UsR4ew&feature=youtu.be
+                videoList.add("as6lG3GTARc"); //https://www.youtube.com/watch?v=as6lG3GTARc&feature=youtu.be
+                /*videoList.add("9IcWCoBhA6Q");
                 videoList.add("Ukr-2jPP2b4");
                 videoList.add("Lu_ndka-Kr0");
                 videoList.add("-bm5IZ2Fg8c");
                 videoList.add("ncNNQPEM3s4");
                 videoList.add("0H8f9EfylFU");
-                videoList.add("eGGMqEhiNM8");
+                videoList.add("eGGMqEhiNM8");*/
                 youTubePlayer.loadVideo(videoList.get(index));
             }
 
