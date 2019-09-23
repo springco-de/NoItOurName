@@ -1,4 +1,4 @@
-package de.springco.internewsilim;
+package de.springco.notitourname;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

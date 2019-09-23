@@ -1,4 +1,4 @@
-package de.springco.internewsilim;
+package de.springco.notitourname;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package de.springco.internewsilim;
+package de.springco.notitourname;
 
 import android.content.Intent;
 import android.os.Build;
@@ -12,8 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import de.springco.internewsilim.TalkShow.TalkShowFragment;
-import de.springco.internewsilim.Video.VideoFragment;
+import de.springco.notitourname.TalkShow.TalkShowFragment;
+import de.springco.notitourname.Video.VideoFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

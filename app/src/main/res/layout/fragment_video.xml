@@ -86,7 +86,7 @@
                             android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="@string/title_first"
+                            android:text="@string/title_first_for_video_fragment"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -141,7 +141,7 @@
                             android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="@string/title_second"
+                            android:text="@string/title_second_for_video_fragment"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -196,7 +196,7 @@
                             android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="@string/title_third"
+                            android:text="@string/title_third_for_video_fragment"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -217,7 +217,7 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
-            <!--<android.support.v7.widget.CardView
+            <android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"
@@ -251,7 +251,7 @@
                             android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="@string/title_fourth"
+                            android:text="@string/title_fourth_for_video_fragment"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -306,7 +306,7 @@
                             android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="@string/title_fifth"
+                            android:text="@string/title_fifth_for_video_fragment"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -361,7 +361,7 @@
                             android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="@string/title_sixth"
+                            android:text="@string/title_sixth_for_video_fragment"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -413,7 +413,7 @@
                             android:layout_margin="5dp"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="@string/title_seventh"
+                            android:text="@string/title_seventh_for_video_fragment"
                             android:textColor="#6f6f6f"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -431,7 +431,7 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <!--<android.support.v7.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/card_size"
                 android:layout_rowWeight="1"

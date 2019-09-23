@@ -6,6 +6,14 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="title_first_for_video_fragment">Первый ролик</string>
+    <string name="title_second_for_video_fragment">Второй ролик</string>
+    <string name="title_third_for_video_fragment">Третий ролик</string>
+    <string name="title_fourth_for_video_fragment">Четвертый ролик</string>
+    <string name="title_fifth_for_video_fragment">Пятый ролик</string>
+    <string name="title_sixth_for_video_fragment">Шестой ролик</string>
+    <string name="title_seventh_for_video_fragment">Седьмой ролик</string>
+
     <string name="title_first">Война в Сирии и насильственный экстремизм</string>
     <string name="content_first">Что заставляет молодых людей бросать своих родных и вступать в террористические организации? Какие последствия для семей и общества несёт #война в Сирии? Какие меры принимаются в разных странах этого региона для противодействия насильственному экстремизму?</string>
 

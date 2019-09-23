@@ -1,10 +1,9 @@
-package de.springco.internewsilim.Video;
+package de.springco.notitourname.TalkShow;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -16,19 +15,20 @@ import com.google.android.youtube.player.YouTubePlayerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import de.springco.internewsilim.R;
-import de.springco.internewsilim.YoutubeConfig;
+import de.springco.notitourname.R;
+import de.springco.notitourname.YoutubeConfig;
 
-public class ContentActivity extends YouTubeBaseActivity {
+public class ContentForTalkShowActivity extends YouTubeBaseActivity {
 
     TextView v_tag, v_title, v_content;
+
     YouTubePlayerView youTubePlayerView;
     YouTubePlayer.OnInitializedListener listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_content);
+        setContentView(R.layout.activity_content_for_talk_show);
 
         Intent intent = getIntent();
 
@@ -68,16 +68,16 @@ public class ContentActivity extends YouTubeBaseActivity {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 List<String> videoList = new ArrayList<String>();
-                videoList.add("oF0EvblRUq4"); //https://www.youtube.com/watch?v=oF0EvblRUq4&feature=youtu.be
-                videoList.add("9cuR7UsR4ew"); //https://www.youtube.com/watch?v=9cuR7UsR4ew&feature=youtu.be
-                videoList.add("as6lG3GTARc"); //https://www.youtube.com/watch?v=as6lG3GTARc&feature=youtu.be
-                /*videoList.add("9IcWCoBhA6Q");
-                videoList.add("Ukr-2jPP2b4");
-                videoList.add("Lu_ndka-Kr0");
-                videoList.add("-bm5IZ2Fg8c");
-                videoList.add("ncNNQPEM3s4");
+                videoList.add("eGGMqEhiNM8");
                 videoList.add("0H8f9EfylFU");
-                videoList.add("eGGMqEhiNM8");*/
+                videoList.add("ncNNQPEM3s4");
+                videoList.add("-bm5IZ2Fg8c");
+                videoList.add("Lu_ndka-Kr0");
+                videoList.add("Ukr-2jPP2b4");
+                videoList.add("9IcWCoBhA6Q");
+                videoList.add("YjN7kiPNBE8");
+                videoList.add("HsPZhEjhqjs");
+                videoList.add("TJ2Eg8M6oN4");
                 youTubePlayer.loadVideo(videoList.get(index));
             }
 

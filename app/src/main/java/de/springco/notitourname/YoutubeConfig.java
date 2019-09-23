@@ -1,4 +1,4 @@
-package de.springco.internewsilim;
+package de.springco.notitourname;
 
 public class YoutubeConfig {
 
